@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>信手</title>
+		<link rel="stylesheet" href="css/common.css" />
+		
+		
+	</head>
+	<body>
+		<div class="container">
+			<header></header>
+			<div class="main">
+				<div id="servicer" class="door">
+					<img class="show" src="image/servicer.png" alt="我是服务商" />
+					<a href="#"><img class="hide" src="image/servicerTips.png" alt="我是需求者" /></a>
+					<span>服务商</span>
+				</div>
+				<div id="demander" class="door">
+					<img class="show" src="image/demander.png" alt="我是需求者" />
+					<a href="#"><img class="hide" src="image/demanderTips.png" alt="我是服务商" /></a>
+					<span>需求者</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<footer></footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script>			
+			$(document).ready(function(){
+				var header_heigth = $("header").height();var footer_height = $("footer").height();
+				var obj_height = getScreenHeight()-header_heigth-footer_height;
+				var img_height = $("#demander .show").height();
+				$(".door").css("height",obj_height);//设置需求者高度
+				$(".door").css("padding-top",(obj_height-img_height)/2.0);
+				index_change();
+			})
+		</script>
+	</body>
+</html>

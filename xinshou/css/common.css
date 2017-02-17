@@ -1,0 +1,10 @@
+*{margin: 0;padding: 0;font-family: "microsoft yahei";}
+header{height: 105px;background-color: #ffdccd;}
+footer{background-color:red;height: 300px;}
+.clear{clear: both;}
+.container{width:100%;min-width: 1200px;box-sizing: border-box;}
+#demander{background-color:green;float: right;}
+#servicer{background-color: orange;float: left;}
+.door{width: 50%;text-align: center;box-sizing: border-box;}
+.door .hide{display: none;}
+.door span{display: block;}
